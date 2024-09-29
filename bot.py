@@ -20,7 +20,7 @@ class ReelsDownloader:
         }
 
     @staticmethod
-    def extract_shortcode_from_url(instagram_url) -> Union[str, None]:
+    def extract_shortcode_from_url(instagram_url: str) -> Union[str, None]:
         if "/reel/" in instagram_url:
             return instagram_url.split("/reel/")[1].split("/")[0]
         elif "/reels/" in instagram_url:
